@@ -15,6 +15,9 @@
 		AA0BF8592C3552B0008A39AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8582C3552B0008A39AF /* Base */; };
 		AA0BF8612C355333008A39AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BF8602C355333008A39AF /* NetworkManager.swift */; };
 		AA0BF8642C355345008A39AF /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8632C355345008A39AF /* Disk */; };
+		AA0BF8672C3553E5008A39AF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8662C3553E5008A39AF /* SnapKit */; };
+		AA0BF8692C3553E5008A39AF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8682C3553E5008A39AF /* SnapKit-Dynamic */; };
+		AA0BF86B2C3553F2008A39AF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BF86A2C3553F2008A39AF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,7 @@
 		AA0BF8582C3552B0008A39AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0BF85A2C3552B0008A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0BF8602C355333008A39AF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA0BF86A2C3553F2008A39AF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0BF8642C355345008A39AF /* Disk in Frameworks */,
+				AA0BF8672C3553E5008A39AF /* SnapKit in Frameworks */,
+				AA0BF8692C3553E5008A39AF /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 				AA0BF84C2C3552AE008A39AF /* AppDelegate.swift */,
 				AA0BF84E2C3552AE008A39AF /* SceneDelegate.swift */,
 				AA0BF8502C3552AE008A39AF /* ViewController.swift */,
+				AA0BF86A2C3553F2008A39AF /* TableViewCell.swift */,
 				AA0BF8602C355333008A39AF /* NetworkManager.swift */,
 				AA0BF8522C3552AF008A39AF /* Main.storyboard */,
 				AA0BF8552C3552B0008A39AF /* Assets.xcassets */,
@@ -90,6 +97,8 @@
 			name = RickDisk;
 			packageProductDependencies = (
 				AA0BF8632C355345008A39AF /* Disk */,
+				AA0BF8662C3553E5008A39AF /* SnapKit */,
+				AA0BF8682C3553E5008A39AF /* SnapKit-Dynamic */,
 			);
 			productName = RickDisk;
 			productReference = AA0BF8492C3552AE008A39AF /* RickDisk.app */;
@@ -121,6 +130,7 @@
 			mainGroup = AA0BF8402C3552AE008A39AF;
 			packageReferences = (
 				AA0BF8622C355345008A39AF /* XCRemoteSwiftPackageReference "Disk" */,
+				AA0BF8652C3553E5008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = AA0BF84A2C3552AE008A39AF /* Products */;
 			projectDirPath = "";
@@ -149,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0BF86B2C3553F2008A39AF /* TableViewCell.swift in Sources */,
 				AA0BF8612C355333008A39AF /* NetworkManager.swift in Sources */,
 				AA0BF8512C3552AE008A39AF /* ViewController.swift in Sources */,
 				AA0BF84D2C3552AE008A39AF /* AppDelegate.swift in Sources */,
@@ -385,6 +396,14 @@
 				minimumVersion = 0.6.4;
 			};
 		};
+		AA0BF8652C3553E5008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -392,6 +411,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA0BF8622C355345008A39AF /* XCRemoteSwiftPackageReference "Disk" */;
 			productName = Disk;
+		};
+		AA0BF8662C3553E5008A39AF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8652C3553E5008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AA0BF8682C3553E5008A39AF /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8652C3553E5008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
