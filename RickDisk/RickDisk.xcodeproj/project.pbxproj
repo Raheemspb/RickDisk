@@ -13,6 +13,8 @@
 		AA0BF8542C3552AF008A39AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8532C3552AF008A39AF /* Base */; };
 		AA0BF8562C3552B0008A39AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8552C3552B0008A39AF /* Assets.xcassets */; };
 		AA0BF8592C3552B0008A39AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8582C3552B0008A39AF /* Base */; };
+		AA0BF8612C355333008A39AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BF8602C355333008A39AF /* NetworkManager.swift */; };
+		AA0BF8642C355345008A39AF /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8632C355345008A39AF /* Disk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		AA0BF8552C3552B0008A39AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0BF8582C3552B0008A39AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0BF85A2C3552B0008A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0BF8602C355333008A39AF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0BF8642C355345008A39AF /* Disk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				AA0BF84C2C3552AE008A39AF /* AppDelegate.swift */,
 				AA0BF84E2C3552AE008A39AF /* SceneDelegate.swift */,
 				AA0BF8502C3552AE008A39AF /* ViewController.swift */,
+				AA0BF8602C355333008A39AF /* NetworkManager.swift */,
 				AA0BF8522C3552AF008A39AF /* Main.storyboard */,
 				AA0BF8552C3552B0008A39AF /* Assets.xcassets */,
 				AA0BF8572C3552B0008A39AF /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = RickDisk;
+			packageProductDependencies = (
+				AA0BF8632C355345008A39AF /* Disk */,
+			);
 			productName = RickDisk;
 			productReference = AA0BF8492C3552AE008A39AF /* RickDisk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = AA0BF8402C3552AE008A39AF;
+			packageReferences = (
+				AA0BF8622C355345008A39AF /* XCRemoteSwiftPackageReference "Disk" */,
+			);
 			productRefGroup = AA0BF84A2C3552AE008A39AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0BF8612C355333008A39AF /* NetworkManager.swift in Sources */,
 				AA0BF8512C3552AE008A39AF /* ViewController.swift in Sources */,
 				AA0BF84D2C3552AE008A39AF /* AppDelegate.swift in Sources */,
 				AA0BF84F2C3552AE008A39AF /* SceneDelegate.swift in Sources */,
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA0BF8622C355345008A39AF /* XCRemoteSwiftPackageReference "Disk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/saoudrizwan/Disk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0BF8632C355345008A39AF /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8622C355345008A39AF /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA0BF8412C3552AE008A39AF /* Project object */;
 }
