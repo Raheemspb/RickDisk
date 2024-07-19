@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class CustomTableViewCell: UITableViewCell {
 
     let charImage: UIImageView = {
@@ -123,7 +122,7 @@ class CustomTableViewCell: UITableViewCell {
         contentView.addSubview(statusLabel)
         contentView.addSubview(watchEpisodesButton)
     }
-
+    // swiftlint:disable:next function_parameter_count
     func configure(imageData: Data, name: String, species: String, gender: String, origin: String, status: String) {
         nameLabel.text = name
         charImage.image = UIImage(data: imageData)

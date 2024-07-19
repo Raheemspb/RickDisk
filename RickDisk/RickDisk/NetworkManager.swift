@@ -28,7 +28,6 @@ struct Location: Codable {
 
 class NetworkManager {
 
-
     let urlString = "https://rickandmortyapi.com/api/character"
 
     func getCharacters(complition: @escaping ([Character]) -> Void) {
