@@ -56,7 +56,6 @@ class NetworkManager {
                 print("Error", error.localizedDescription)
             }
         }.resume()
-
     }
 
     func saveCharactersToDisk(_ characters: [Character]) {
@@ -77,7 +76,5 @@ class NetworkManager {
             print("Error get characters: ", error.localizedDescription)
             return nil
         }
-
     }
-
 }
